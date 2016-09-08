@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     tools:context="com.dadaabcamps.mmarket.MainActivity">
 
-    <android.support.v7.widget.recyclerview
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_product_display"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
