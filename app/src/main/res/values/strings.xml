@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Mmarket</string>
+    <string name="action_settings">settings</string>
+    <string name="action_logout">logout</string>
+    <string name="welcome">welcome to Mmarket</string>
+    <string name="nav_view_item_1">ITEM ONE</string>
+    <string name="nav_view_item_2">ITEM TWO</string>
+    <string name="nav_view_item_3">ITEM THREE</string>
+    <string name="nav_view_item_4">ITEM FOUR</string>
+    <string name="nav_view_category_2">second category</string>
+    <string name="delivery_name">Delivery Name</string>
 </resources>

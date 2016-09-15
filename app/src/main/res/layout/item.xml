@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name of product"
+        android:id="@+id/textViewnameofproduct"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description"
+        android:id="@+id/textViewdescription"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/editTextnameofproduct"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <EditText
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextnameofproduct"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/textViewnameofproduct"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name of supplier"
+        android:id="@+id/textViewnameofsupplier"
+        android:layout_below="@+id/textViewdescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mobile"
+        android:id="@+id/textViewmobile"
+        android:layout_below="@+id/textViewnameofsupplier"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="79dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextdescription"
+        android:layout_above="@+id/textViewnameofsupplier"
+        android:layout_alignLeft="@+id/editTextnameofproduct"
+        android:layout_alignStart="@+id/editTextnameofproduct" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextname"
+        android:layout_above="@+id/textViewmobile"
+        android:layout_alignLeft="@+id/editTextdescription"
+        android:layout_alignStart="@+id/editTextdescription" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextmobile"
+        android:layout_alignBottom="@+id/textViewmobile"
+        android:layout_toRightOf="@+id/textViewnameofsupplier"
+        android:layout_toEndOf="@+id/textViewnameofsupplier" />
+
+</RelativeLayout>

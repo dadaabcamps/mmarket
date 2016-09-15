@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textviewphonenumber"
+        android:layout_toLeftOf="@+id/textviewgetnewpin"
+        android:layout_toStartOf="@+id/textviewgetnewpin"
+        android:layout_marginBottom="76dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone No."
+        android:id="@+id/textviewphoneno"
+        android:layout_above="@+id/textViewpincode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Get new pin"
+        android:id="@+id/textviewgetnewpin"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textViewpincode"
+        android:layout_alignRight="@+id/buttonloginwithfacebook"
+        android:layout_alignEnd="@+id/buttonloginwithfacebook"
+        android:layout_marginTop="61dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with facebook"
+        android:id="@+id/buttonloginwithfacebook"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textviewgetnewpin"
+        android:layout_toRightOf="@+id/textViewpincode"
+        android:layout_toEndOf="@+id/textViewpincode"
+        android:layout_marginTop="79dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/buttonRegister"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pin Code"
+        android:id="@+id/textViewpincode"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/textviewphonenumber" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextphoneno"
+        android:layout_alignBottom="@+id/textviewphoneno"
+        android:layout_alignLeft="@+id/buttonRegister"
+        android:layout_alignStart="@+id/buttonRegister" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextpincode"
+        android:layout_alignTop="@+id/textViewpincode"
+        android:layout_alignRight="@+id/editTextphoneno"
+        android:layout_alignEnd="@+id/editTextphoneno" />
+
+</RelativeLayout>
